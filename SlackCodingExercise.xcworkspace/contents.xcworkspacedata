@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SlackCodingExercise/Model/Member+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:SlackCodingExercise/Model/Member.swift">
+   </FileRef>
+   <FileRef
+      location = "group:SlackCodingExercise/Model/Profile+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:SlackCodingExercise/Model/Profile.swift">
+   </FileRef>
+   <FileRef
       location = "group:SlackCodingExercise.xcodeproj">
    </FileRef>
    <FileRef

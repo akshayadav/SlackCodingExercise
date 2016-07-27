@@ -16,6 +16,10 @@
 		BA6731D81D49450F005043D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6731D61D49450F005043D2 /* LaunchScreen.storyboard */; };
 		BA6731E31D49450F005043D2 /* SlackCodingExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6731E21D49450F005043D2 /* SlackCodingExerciseTests.swift */; };
 		BA6731EE1D49450F005043D2 /* SlackCodingExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6731ED1D49450F005043D2 /* SlackCodingExerciseUITests.swift */; };
+		BA6732081D494B25005043D2 /* Member+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6732041D494B25005043D2 /* Member+CoreDataProperties.swift */; };
+		BA6732091D494B25005043D2 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6732051D494B25005043D2 /* Member.swift */; };
+		BA67320A1D494B25005043D2 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6732061D494B25005043D2 /* Profile+CoreDataProperties.swift */; };
+		BA67320B1D494B25005043D2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6732071D494B25005043D2 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		BA6731E91D49450F005043D2 /* SlackCodingExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackCodingExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6731ED1D49450F005043D2 /* SlackCodingExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackCodingExerciseUITests.swift; sourceTree = "<group>"; };
 		BA6731EF1D49450F005043D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6732041D494B25005043D2 /* Member+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Member+CoreDataProperties.swift"; path = "Model/Member+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA6732051D494B25005043D2 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Member.swift; path = Model/Member.swift; sourceTree = "<group>"; };
+		BA6732061D494B25005043D2 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Profile+CoreDataProperties.swift"; path = "Model/Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA6732071D494B25005043D2 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Model/Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,7 @@
 		BA6731C91D49450F005043D2 /* SlackCodingExercise */ = {
 			isa = PBXGroup;
 			children = (
+				BA6731FB1D494AD0005043D2 /* Model */,
 				BA6731CA1D49450F005043D2 /* AppDelegate.swift */,
 				BA6731CC1D49450F005043D2 /* ViewController.swift */,
 				BA6731CE1D49450F005043D2 /* Main.storyboard */,
@@ -150,6 +159,17 @@
 				BA6731EF1D49450F005043D2 /* Info.plist */,
 			);
 			path = SlackCodingExerciseUITests;
+			sourceTree = "<group>";
+		};
+		BA6731FB1D494AD0005043D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA6732041D494B25005043D2 /* Member+CoreDataProperties.swift */,
+				BA6732051D494B25005043D2 /* Member.swift */,
+				BA6732061D494B25005043D2 /* Profile+CoreDataProperties.swift */,
+				BA6732071D494B25005043D2 /* Profile.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,8 +356,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6731CD1D49450F005043D2 /* ViewController.swift in Sources */,
+				BA6732081D494B25005043D2 /* Member+CoreDataProperties.swift in Sources */,
 				BA6731CB1D49450F005043D2 /* AppDelegate.swift in Sources */,
+				BA67320B1D494B25005043D2 /* Profile.swift in Sources */,
 				BA6731D31D49450F005043D2 /* SlackCodingExercise.xcdatamodeld in Sources */,
+				BA67320A1D494B25005043D2 /* Profile+CoreDataProperties.swift in Sources */,
+				BA6732091D494B25005043D2 /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
