@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		27CC7FA25E65E2C717F98C24 /* Pods_SlackCodingExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E58316438AD7345EA9F010 /* Pods_SlackCodingExercise.framework */; };
 		BA6731CB1D49450F005043D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6731CA1D49450F005043D2 /* AppDelegate.swift */; };
-		BA6731CD1D49450F005043D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6731CC1D49450F005043D2 /* ViewController.swift */; };
 		BA6731D01D49450F005043D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6731CE1D49450F005043D2 /* Main.storyboard */; };
 		BA6731D31D49450F005043D2 /* SlackCodingExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA6731D11D49450F005043D2 /* SlackCodingExercise.xcdatamodeld */; };
 		BA6731D51D49450F005043D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6731D41D49450F005043D2 /* Assets.xcassets */; };
@@ -21,6 +20,7 @@
 		BA6732141D494D3C005043D2 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6732101D494D3C005043D2 /* Member.swift */; };
 		BA6732151D494D3C005043D2 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6732111D494D3C005043D2 /* Profile+CoreDataProperties.swift */; };
 		BA6732161D494D3C005043D2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6732121D494D3C005043D2 /* Profile.swift */; };
+		BA67321B1D4950D8005043D2 /* DisplayMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67321A1D4950D8005043D2 /* DisplayMembersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		6C000CFA62C9B07BCB84F129 /* Pods-SlackCodingExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackCodingExercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackCodingExercise/Pods-SlackCodingExercise.release.xcconfig"; sourceTree = "<group>"; };
 		BA6731C71D49450F005043D2 /* SlackCodingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackCodingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6731CA1D49450F005043D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA6731CC1D49450F005043D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA6731CF1D49450F005043D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA6731D21D49450F005043D2 /* SlackCodingExercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SlackCodingExercise.xcdatamodel; sourceTree = "<group>"; };
 		BA6731D41D49450F005043D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		BA6732101D494D3C005043D2 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Member.swift; path = Model/Member.swift; sourceTree = "<group>"; };
 		BA6732111D494D3C005043D2 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Profile+CoreDataProperties.swift"; path = "Model/Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BA6732121D494D3C005043D2 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Model/Profile.swift; sourceTree = "<group>"; };
+		BA67321A1D4950D8005043D2 /* DisplayMembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayMembersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,14 +133,10 @@
 		BA6731C91D49450F005043D2 /* SlackCodingExercise */ = {
 			isa = PBXGroup;
 			children = (
+				BA6732191D49506F005043D2 /* support */,
+				BA6732181D49504A005043D2 /* PersistenceData */,
 				BA6731FB1D494AD0005043D2 /* Model */,
-				BA6731CA1D49450F005043D2 /* AppDelegate.swift */,
-				BA6731CC1D49450F005043D2 /* ViewController.swift */,
-				BA6731CE1D49450F005043D2 /* Main.storyboard */,
-				BA6731D41D49450F005043D2 /* Assets.xcassets */,
-				BA6731D61D49450F005043D2 /* LaunchScreen.storyboard */,
-				BA6731D91D49450F005043D2 /* Info.plist */,
-				BA6731D11D49450F005043D2 /* SlackCodingExercise.xcdatamodeld */,
+				BA6732171D495037005043D2 /* View+Controller */,
 			);
 			path = SlackCodingExercise;
 			sourceTree = "<group>";
@@ -181,6 +177,34 @@
 				BA67320D1D494C49005043D2 /* DataManager.swift */,
 			);
 			name = DataModelManager;
+			sourceTree = "<group>";
+		};
+		BA6732171D495037005043D2 /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA6731CE1D49450F005043D2 /* Main.storyboard */,
+				BA67321A1D4950D8005043D2 /* DisplayMembersViewController.swift */,
+			);
+			name = "View+Controller";
+			sourceTree = "<group>";
+		};
+		BA6732181D49504A005043D2 /* PersistenceData */ = {
+			isa = PBXGroup;
+			children = (
+				BA6731D11D49450F005043D2 /* SlackCodingExercise.xcdatamodeld */,
+			);
+			name = PersistenceData;
+			sourceTree = "<group>";
+		};
+		BA6732191D49506F005043D2 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				BA6731CA1D49450F005043D2 /* AppDelegate.swift */,
+				BA6731D41D49450F005043D2 /* Assets.xcassets */,
+				BA6731D61D49450F005043D2 /* LaunchScreen.storyboard */,
+				BA6731D91D49450F005043D2 /* Info.plist */,
+			);
+			name = support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,8 +390,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6731CD1D49450F005043D2 /* ViewController.swift in Sources */,
 				BA6732161D494D3C005043D2 /* Profile.swift in Sources */,
+				BA67321B1D4950D8005043D2 /* DisplayMembersViewController.swift in Sources */,
 				BA6732141D494D3C005043D2 /* Member.swift in Sources */,
 				BA67320E1D494C49005043D2 /* DataManager.swift in Sources */,
 				BA6731CB1D49450F005043D2 /* AppDelegate.swift in Sources */,

@@ -19,7 +19,7 @@ class DataManager: NSObject {
         
         let managedContext = appDelegate.managedObjectContext
         
-        let memberEntity = NSEntityDescription.entityForName("Members", inManagedObjectContext: managedContext)
+        let memberEntity = NSEntityDescription.entityForName("Member", inManagedObjectContext: managedContext)
         
         let profileEntity = NSEntityDescription.entityForName("Profile", inManagedObjectContext: managedContext)
         
@@ -33,7 +33,7 @@ class DataManager: NSObject {
             //print(members[memberIndex])
             
             let id = members[memberIndex]["id"].string
-            
+            if(!doesMemberExist(id!)){
                 member.id = id
                 member.name = members[memberIndex]["name"].string
                 member.team_id = members[memberIndex]["team_id"].string
@@ -85,10 +85,65 @@ class DataManager: NSObject {
                 catch{
                     print("error")
                 }
+            }else{
+                print("This person in offline data")
+            }
         }
     }
 
     
+    class func fetchExistingMembers()->[NSManagedObject]{
+        let appDelegate =
+            UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        //2
+        let fetchRequest = NSFetchRequest(entityName: "Member")
+        
+        //3
+        
+        var membersArray = [NSManagedObject]()
+        
+        do {
+            let results =
+                try managedContext.executeFetchRequest(fetchRequest)
+            
+            for member in results{
+                
+                if member.id! != nil{
+                    
+                    membersArray.append(member as! NSManagedObject)
+                    
+                }
+                
+            }
+            
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        return membersArray
+    }
     
+    
+    
+    class func doesMemberExist(memberId:String)->Bool{
+        
+        let existingMembers:[NSManagedObject] = fetchExistingMembers()
+        
+        for member in existingMembers{
+            let helloWorld:Member = member as! Member
+            
+            //   let id = member.valueForKey("id")?.string
+            
+            if (memberId == helloWorld.id ){
+                return true
+            }
+        }
+        return false
+        
+    }
+
     
 }
