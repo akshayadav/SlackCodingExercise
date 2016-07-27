@@ -20,7 +20,7 @@
         <attribute name="tz_offset" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hasA" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="ofA" inverseEntity="Profile" syncable="YES"/>
     </entity>
-    <entity name="Profile" representedClassName=".Profile" syncable="YES">
+    <entity name="Profile" representedClassName=".Profile" parentEntity="Member" syncable="YES">
         <attribute name="avatar_hash" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>

@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class Profile: NSManagedObject {
+class Profile: Member {
 
 // Insert code here to add functionality to your managed object subclass
 
