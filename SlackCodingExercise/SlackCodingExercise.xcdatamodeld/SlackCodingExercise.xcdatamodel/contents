@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Member" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deleated" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="has_2fa" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_admin" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_bot" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_owner" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_primary_owner" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_restricted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_ultra_restricted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="real_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="team_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tz" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tz_label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tz_offset" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Member" positionX="-63" positionY="-18" width="128" height="300"/>
+    </elements>
 </model>
