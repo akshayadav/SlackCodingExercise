@@ -12,9 +12,10 @@ import SVProgressHUD
 import SwiftyJSON
 import CoreData
 
-class DisplayMembersViewController: UIViewController {
+class DisplayMembersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
+    @IBOutlet weak var tableView: UITableView!
     var token:String = "xoxp-4698769766-4698769768-18910479235-8fa82d53b2"
     var membersLocal = [NSManagedObject]()
 
@@ -55,7 +56,10 @@ class DisplayMembersViewController: UIViewController {
                     DataManager.saveMember(json["members"])
                     self.membersLocal = DataManager.fetchExistingMembers()
                     
-                    print(self.membersLocal)
+                    self.tableView.reloadData()
+                    
+                    
+                   // print(self.membersLocal)
                     
                     SVProgressHUD.dismiss()
                 }
@@ -68,6 +72,24 @@ class DisplayMembersViewController: UIViewController {
         })
         
         
+        
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(membersLocal.count)
+        return membersLocal.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")as! MemberTableViewCell
+        
+        let member = membersLocal[indexPath.row] as! Member
+        cell.titleLabel!.text = member.real_name
+        
+        print(member.real_name)
+        
+        return cell
         
     }
 
