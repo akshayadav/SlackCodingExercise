@@ -19,7 +19,24 @@
         <attribute name="tz_label" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tz_offset" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Profile" syncable="YES">
+        <attribute name="avatar_hash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_24" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_32" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_48" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_72" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_192" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_original" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="real_name_normalized" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Member" positionX="-63" positionY="-18" width="128" height="300"/>
+        <element name="Profile" positionX="-54" positionY="117" width="128" height="255"/>
     </elements>
 </model>
