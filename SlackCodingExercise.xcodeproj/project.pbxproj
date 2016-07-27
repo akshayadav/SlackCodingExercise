@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA6731CB1D49450F005043D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6731CA1D49450F005043D2 /* AppDelegate.swift */; };
+		BA6731CD1D49450F005043D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6731CC1D49450F005043D2 /* ViewController.swift */; };
+		BA6731D01D49450F005043D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6731CE1D49450F005043D2 /* Main.storyboard */; };
+		BA6731D31D49450F005043D2 /* SlackCodingExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA6731D11D49450F005043D2 /* SlackCodingExercise.xcdatamodeld */; };
+		BA6731D51D49450F005043D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6731D41D49450F005043D2 /* Assets.xcassets */; };
+		BA6731D81D49450F005043D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6731D61D49450F005043D2 /* LaunchScreen.storyboard */; };
+		BA6731E31D49450F005043D2 /* SlackCodingExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6731E21D49450F005043D2 /* SlackCodingExerciseTests.swift */; };
+		BA6731EE1D49450F005043D2 /* SlackCodingExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6731ED1D49450F005043D2 /* SlackCodingExerciseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA6731DF1D49450F005043D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA6731BF1D49450F005043D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA6731C61D49450F005043D2;
+			remoteInfo = SlackCodingExercise;
+		};
+		BA6731EA1D49450F005043D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA6731BF1D49450F005043D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA6731C61D49450F005043D2;
+			remoteInfo = SlackCodingExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA6731C71D49450F005043D2 /* SlackCodingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackCodingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6731CA1D49450F005043D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA6731CC1D49450F005043D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA6731CF1D49450F005043D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA6731D21D49450F005043D2 /* SlackCodingExercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SlackCodingExercise.xcdatamodel; sourceTree = "<group>"; };
+		BA6731D41D49450F005043D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA6731D71D49450F005043D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA6731D91D49450F005043D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6731DE1D49450F005043D2 /* SlackCodingExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackCodingExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6731E21D49450F005043D2 /* SlackCodingExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackCodingExerciseTests.swift; sourceTree = "<group>"; };
+		BA6731E41D49450F005043D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6731E91D49450F005043D2 /* SlackCodingExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackCodingExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6731ED1D49450F005043D2 /* SlackCodingExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackCodingExerciseUITests.swift; sourceTree = "<group>"; };
+		BA6731EF1D49450F005043D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA6731C41D49450F005043D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6731DB1D49450F005043D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6731E61D49450F005043D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA6731BE1D49450F005043D2 = {
+			isa = PBXGroup;
+			children = (
+				BA6731C91D49450F005043D2 /* SlackCodingExercise */,
+				BA6731E11D49450F005043D2 /* SlackCodingExerciseTests */,
+				BA6731EC1D49450F005043D2 /* SlackCodingExerciseUITests */,
+				BA6731C81D49450F005043D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA6731C81D49450F005043D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA6731C71D49450F005043D2 /* SlackCodingExercise.app */,
+				BA6731DE1D49450F005043D2 /* SlackCodingExerciseTests.xctest */,
+				BA6731E91D49450F005043D2 /* SlackCodingExerciseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA6731C91D49450F005043D2 /* SlackCodingExercise */ = {
+			isa = PBXGroup;
+			children = (
+				BA6731CA1D49450F005043D2 /* AppDelegate.swift */,
+				BA6731CC1D49450F005043D2 /* ViewController.swift */,
+				BA6731CE1D49450F005043D2 /* Main.storyboard */,
+				BA6731D41D49450F005043D2 /* Assets.xcassets */,
+				BA6731D61D49450F005043D2 /* LaunchScreen.storyboard */,
+				BA6731D91D49450F005043D2 /* Info.plist */,
+				BA6731D11D49450F005043D2 /* SlackCodingExercise.xcdatamodeld */,
+			);
+			path = SlackCodingExercise;
+			sourceTree = "<group>";
+		};
+		BA6731E11D49450F005043D2 /* SlackCodingExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA6731E21D49450F005043D2 /* SlackCodingExerciseTests.swift */,
+				BA6731E41D49450F005043D2 /* Info.plist */,
+			);
+			path = SlackCodingExerciseTests;
+			sourceTree = "<group>";
+		};
+		BA6731EC1D49450F005043D2 /* SlackCodingExerciseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA6731ED1D49450F005043D2 /* SlackCodingExerciseUITests.swift */,
+				BA6731EF1D49450F005043D2 /* Info.plist */,
+			);
+			path = SlackCodingExerciseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA6731C61D49450F005043D2 /* SlackCodingExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6731F21D49450F005043D2 /* Build configuration list for PBXNativeTarget "SlackCodingExercise" */;
+			buildPhases = (
+				BA6731C31D49450F005043D2 /* Sources */,
+				BA6731C41D49450F005043D2 /* Frameworks */,
+				BA6731C51D49450F005043D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlackCodingExercise;
+			productName = SlackCodingExercise;
+			productReference = BA6731C71D49450F005043D2 /* SlackCodingExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA6731DD1D49450F005043D2 /* SlackCodingExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6731F51D49450F005043D2 /* Build configuration list for PBXNativeTarget "SlackCodingExerciseTests" */;
+			buildPhases = (
+				BA6731DA1D49450F005043D2 /* Sources */,
+				BA6731DB1D49450F005043D2 /* Frameworks */,
+				BA6731DC1D49450F005043D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA6731E01D49450F005043D2 /* PBXTargetDependency */,
+			);
+			name = SlackCodingExerciseTests;
+			productName = SlackCodingExerciseTests;
+			productReference = BA6731DE1D49450F005043D2 /* SlackCodingExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA6731E81D49450F005043D2 /* SlackCodingExerciseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6731F81D49450F005043D2 /* Build configuration list for PBXNativeTarget "SlackCodingExerciseUITests" */;
+			buildPhases = (
+				BA6731E51D49450F005043D2 /* Sources */,
+				BA6731E61D49450F005043D2 /* Frameworks */,
+				BA6731E71D49450F005043D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA6731EB1D49450F005043D2 /* PBXTargetDependency */,
+			);
+			name = SlackCodingExerciseUITests;
+			productName = SlackCodingExerciseUITests;
+			productReference = BA6731E91D49450F005043D2 /* SlackCodingExerciseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA6731BF1D49450F005043D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = akshay;
+				TargetAttributes = {
+					BA6731C61D49450F005043D2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 742BWTFU9R;
+					};
+					BA6731DD1D49450F005043D2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BA6731C61D49450F005043D2;
+					};
+					BA6731E81D49450F005043D2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BA6731C61D49450F005043D2;
+					};
+				};
+			};
+			buildConfigurationList = BA6731C21D49450F005043D2 /* Build configuration list for PBXProject "SlackCodingExercise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA6731BE1D49450F005043D2;
+			productRefGroup = BA6731C81D49450F005043D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA6731C61D49450F005043D2 /* SlackCodingExercise */,
+				BA6731DD1D49450F005043D2 /* SlackCodingExerciseTests */,
+				BA6731E81D49450F005043D2 /* SlackCodingExerciseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA6731C51D49450F005043D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6731D81D49450F005043D2 /* LaunchScreen.storyboard in Resources */,
+				BA6731D51D49450F005043D2 /* Assets.xcassets in Resources */,
+				BA6731D01D49450F005043D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6731DC1D49450F005043D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6731E71D49450F005043D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA6731C31D49450F005043D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6731CD1D49450F005043D2 /* ViewController.swift in Sources */,
+				BA6731CB1D49450F005043D2 /* AppDelegate.swift in Sources */,
+				BA6731D31D49450F005043D2 /* SlackCodingExercise.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6731DA1D49450F005043D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6731E31D49450F005043D2 /* SlackCodingExerciseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6731E51D49450F005043D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6731EE1D49450F005043D2 /* SlackCodingExerciseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA6731E01D49450F005043D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA6731C61D49450F005043D2 /* SlackCodingExercise */;
+			targetProxy = BA6731DF1D49450F005043D2 /* PBXContainerItemProxy */;
+		};
+		BA6731EB1D49450F005043D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA6731C61D49450F005043D2 /* SlackCodingExercise */;
+			targetProxy = BA6731EA1D49450F005043D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA6731CE1D49450F005043D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6731CF1D49450F005043D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA6731D61D49450F005043D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6731D71D49450F005043D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA6731F01D49450F005043D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA6731F11D49450F005043D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA6731F31D49450F005043D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SlackCodingExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshayadav.SlackCodingExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		BA6731F41D49450F005043D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SlackCodingExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshayadav.SlackCodingExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		BA6731F61D49450F005043D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SlackCodingExerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshayadav.SlackCodingExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackCodingExercise.app/SlackCodingExercise";
+			};
+			name = Debug;
+		};
+		BA6731F71D49450F005043D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SlackCodingExerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshayadav.SlackCodingExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackCodingExercise.app/SlackCodingExercise";
+			};
+			name = Release;
+		};
+		BA6731F91D49450F005043D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SlackCodingExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshayadav.SlackCodingExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SlackCodingExercise;
+			};
+			name = Debug;
+		};
+		BA6731FA1D49450F005043D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SlackCodingExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshayadav.SlackCodingExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SlackCodingExercise;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA6731C21D49450F005043D2 /* Build configuration list for PBXProject "SlackCodingExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6731F01D49450F005043D2 /* Debug */,
+				BA6731F11D49450F005043D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6731F21D49450F005043D2 /* Build configuration list for PBXNativeTarget "SlackCodingExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6731F31D49450F005043D2 /* Debug */,
+				BA6731F41D49450F005043D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA6731F51D49450F005043D2 /* Build configuration list for PBXNativeTarget "SlackCodingExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6731F61D49450F005043D2 /* Debug */,
+				BA6731F71D49450F005043D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA6731F81D49450F005043D2 /* Build configuration list for PBXNativeTarget "SlackCodingExerciseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6731F91D49450F005043D2 /* Debug */,
+				BA6731FA1D49450F005043D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA6731D11D49450F005043D2 /* SlackCodingExercise.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA6731D21D49450F005043D2 /* SlackCodingExercise.xcdatamodel */,
+			);
+			currentVersion = BA6731D21D49450F005043D2 /* SlackCodingExercise.xcdatamodel */;
+			path = SlackCodingExercise.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA6731BF1D49450F005043D2 /* Project object */;
+}
