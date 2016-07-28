@@ -37,7 +37,7 @@ class DataManager: NSObject {
                 member.id = id
                 member.name = members[memberIndex]["name"].string
                 member.team_id = members[memberIndex]["team_id"].string
-                member.deleated = members[memberIndex]["deleated"].bool
+                member.deleated = members[memberIndex]["deleated"].boolValue
                 member.status = members[memberIndex]["status"].string
                 member.color = members[memberIndex]["color"].string
                 member.real_name = members[memberIndex]["real_name"].string

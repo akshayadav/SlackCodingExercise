@@ -13,6 +13,7 @@ class MemberTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var memberImage: UIImageView!
     
+    @IBOutlet weak var deletedImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

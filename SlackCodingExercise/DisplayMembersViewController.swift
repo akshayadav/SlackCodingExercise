@@ -11,6 +11,7 @@ import Alamofire
 import SVProgressHUD
 import SwiftyJSON
 import CoreData
+import ChameleonFramework
 
 class DisplayMembersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -90,7 +91,15 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
         let image = UIImage(data: (member.hasA?.image_192)!)
         cell.memberImage.image = image
         
+        let color: UIColor = UIColor(hexString: member.color)
+        cell.backgroundColor = color
+        cell.alpha = 0.8
+        cell.titleLabel.textColor = UIColor(complementaryFlatColorOf: color)
         print(member.real_name)
+        
+        if(member.deleated!.boolValue){
+            cell.deletedImageView.image = UIImage(named: "deleted")
+        }
         
         return cell
         
