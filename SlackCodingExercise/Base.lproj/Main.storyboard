@@ -31,16 +31,16 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="6bu-Ls-bXg">
                                             <rect key="frame" x="8" y="8" width="50" height="50"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="6bu-Ls-bXg" secondAttribute="height" multiplier="1:1" id="7UZ-52-v7n"/>
+                                                <constraint firstAttribute="width" constant="50" id="XCC-qU-N2q"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Slack Team!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-Pf-H3L">
-                                            <rect key="frame" x="66" y="24" width="340" height="34.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" text="My Slack Team!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-Pf-H3L">
+                                            <rect key="frame" x="66" y="24" width="340" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="4b3-Pf-H3L" secondAttribute="height" multiplier="284:39" id="c5X-8C-GTq"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="27"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
                                                 <mask key="constraints">
@@ -52,12 +52,11 @@
                                     <color key="backgroundColor" red="0.99561542709999995" green="1" blue="0.75510952659999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="4b3-Pf-H3L" firstAttribute="leading" secondItem="wQ7-SJ-XAS" secondAttribute="leading" constant="66" id="6F5-4b-J2R"/>
-                                        <constraint firstItem="6bu-Ls-bXg" firstAttribute="leading" secondItem="wQ7-SJ-XAS" secondAttribute="leading" constant="8" id="C0t-qK-Gd5"/>
-                                        <constraint firstItem="4b3-Pf-H3L" firstAttribute="leading" secondItem="6bu-Ls-bXg" secondAttribute="trailing" constant="8" symbolic="YES" id="RBF-Nn-KQK"/>
-                                        <constraint firstItem="6bu-Ls-bXg" firstAttribute="top" secondItem="wQ7-SJ-XAS" secondAttribute="top" constant="8" id="RyU-ce-xKy"/>
+                                        <constraint firstItem="6bu-Ls-bXg" firstAttribute="centerY" secondItem="wQ7-SJ-XAS" secondAttribute="centerY" id="NzM-tH-3M5"/>
+                                        <constraint firstItem="6bu-Ls-bXg" firstAttribute="top" secondItem="wQ7-SJ-XAS" secondAttribute="topMargin" id="SXY-5Q-7Gs"/>
+                                        <constraint firstItem="4b3-Pf-H3L" firstAttribute="leading" secondItem="6bu-Ls-bXg" secondAttribute="trailing" constant="8" symbolic="YES" id="UN2-rT-CIT"/>
                                         <constraint firstItem="4b3-Pf-H3L" firstAttribute="top" secondItem="wQ7-SJ-XAS" secondAttribute="top" constant="20" id="WCU-S9-NGj"/>
-                                        <constraint firstItem="6bu-Ls-bXg" firstAttribute="centerY" secondItem="wQ7-SJ-XAS" secondAttribute="centerY" id="XbG-sy-cxX"/>
-                                        <constraint firstAttribute="bottom" secondItem="6bu-Ls-bXg" secondAttribute="bottom" constant="9" id="Zfl-yl-pCi"/>
+                                        <constraint firstItem="6bu-Ls-bXg" firstAttribute="leading" secondItem="wQ7-SJ-XAS" secondAttribute="leadingMargin" id="aG3-Iv-xRB"/>
                                         <constraint firstItem="4b3-Pf-H3L" firstAttribute="bottom" secondItem="wQ7-SJ-XAS" secondAttribute="bottomMargin" id="cAN-hM-iQk"/>
                                         <constraint firstItem="4b3-Pf-H3L" firstAttribute="centerX" secondItem="wQ7-SJ-XAS" secondAttribute="centerX" id="l71-cN-dpI"/>
                                         <constraint firstAttribute="trailing" secondItem="4b3-Pf-H3L" secondAttribute="trailing" constant="8" id="lcG-b1-nTd"/>
@@ -103,7 +102,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2v-Jr-CWb">
                                                             <rect key="frame" x="8" y="145" width="212" height="17"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qr-Im-myD">
@@ -121,13 +120,13 @@
                                                                 <constraint firstAttribute="height" constant="21" id="3Ad-Sb-kfn"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXf-VI-0Zc">
                                                             <rect key="frame" x="8" y="87" width="154" height="17"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZi-8u-CnU">
@@ -137,7 +136,7 @@
                                                                 <constraint firstAttribute="height" constant="21" id="snX-os-Vwl"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">

@@ -45,25 +45,29 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
         SVProgressHUD.show()
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             
-            Alamofire.request(.GET, "https://slack.com/api/users.list"+"?token="+self.token).responseJSON{ response in
+            Alamofire.request(.GET, "https://slack.com/api/users.list"+"?token="+self.token).responseJSON{
+                response in
                 
                 
                 
                 
                 dispatch_async(dispatch_get_main_queue()){
                     
+                    if(response.result.value != nil){
+                
                     let json = JSON(response.result.value!)
                     
                     DataManager.saveMember(json["members"])
                     self.membersLocal = DataManager.fetchExistingMembers()
-                    
                     self.tableView.reloadData()
                     
-                    
-                   // print(self.membersLocal)
-                    
                     SVProgressHUD.dismiss()
+                    }
+                    else{
+                        print("Something Is Wrong!")
                 }
+                }
+                
                 
             }
             
