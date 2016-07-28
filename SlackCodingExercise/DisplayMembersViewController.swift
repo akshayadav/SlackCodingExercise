@@ -87,9 +87,19 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
         let member = membersLocal[indexPath.row] as! Member
         cell.titleLabel!.text = member.real_name
         
+        let image = UIImage(data: (member.hasA?.image_192)!)
+        cell.memberImage.image = image
+        
         print(member.real_name)
         
         return cell
+        
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let member:Member = membersLocal[indexPath.row] as! Member
+        
+        print(member.hasA?.image_24)
         
     }
 

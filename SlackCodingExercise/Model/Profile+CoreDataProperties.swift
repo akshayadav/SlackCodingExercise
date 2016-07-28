@@ -17,11 +17,16 @@ extension Profile {
     @NSManaged var avatar_hash: String?
     @NSManaged var email: String?
     @NSManaged var first_name: String?
-    @NSManaged var image_24: String?
-    @NSManaged var image_32: String?
-    @NSManaged var image_48: String?
-    @NSManaged var image_72: String?
-    @NSManaged var image_192: String?
+    @NSManaged var image_24_URL: String?
+    @NSManaged var image_24:NSData?
+    @NSManaged var image_32_URL: String?
+    @NSManaged var image_32:NSData?
+    @NSManaged var image_48_URL: String?
+    @NSManaged var image_48:NSData?
+    @NSManaged var image_72_URL: String?
+    @NSManaged var image_72:NSData?
+    @NSManaged var image_192_URL: String?
+    @NSManaged var image_192:NSData?
     @NSManaged var image_original: String?
     @NSManaged var last_name: String?
     @NSManaged var phone: String?

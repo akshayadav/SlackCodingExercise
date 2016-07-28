@@ -24,11 +24,16 @@
         <attribute name="avatar_hash" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="image_24" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="image_32" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="image_48" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="image_72" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="image_192" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_24" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image_24_URL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_32" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image_32_URL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_48" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image_48_URL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_72" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image_72_URL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_192" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image_192_URL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image_original" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
@@ -39,6 +44,6 @@
     </entity>
     <elements>
         <element name="Member" positionX="-63" positionY="-18" width="128" height="315"/>
-        <element name="Profile" positionX="-54" positionY="117" width="128" height="270"/>
+        <element name="Profile" positionX="-54" positionY="117" width="128" height="345"/>
     </elements>
 </model>
