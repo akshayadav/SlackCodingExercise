@@ -94,7 +94,9 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
         let color: UIColor = UIColor(hexString: member.color)
         cell.backgroundColor = color
         cell.alpha = 0.8
-        cell.titleLabel.textColor = UIColor(complementaryFlatColorOf: color)
+        cell.titleLabel.textColor = UIColor(complementaryFlatColorOf: color, withAlpha: 10)
+       // cell.titleLabel.superview!.backgroundColor?.colorWithAlphaComponent(0.25)
+        
         print(member.real_name)
         
         if(member.deleated!.boolValue){
@@ -108,8 +110,7 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let member:Member = membersLocal[indexPath.row] as! Member
         
-        print(member.hasA?.image_24)
-        
+     
     }
 
     

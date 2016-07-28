@@ -75,7 +75,7 @@
                                         <rect key="frame" x="0.0" y="95" width="414" height="198"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gJC-kK-s2v" id="yKV-ch-AmQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="197.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="198"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aiG-rT-sF7">
@@ -87,32 +87,93 @@
                                                         <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="100"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-7R-ZOM">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="buG-cO-oAD">
+                                                    <rect key="frame" x="51" y="72" width="84" height="54"/>
+                                                </imageView>
+                                                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-7R-ZOM">
                                                     <rect key="frame" x="186" y="14" width="220" height="170"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="full_name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7D-v5-T7I">
-                                                            <rect key="frame" x="0.0" y="8" width="220" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXf-VI-0Zc">
+                                                            <rect key="frame" x="8" y="44" width="108" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXf-VI-0Zc">
-                                                            <rect key="frame" x="0.0" y="37" width="70" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="full_name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7D-v5-T7I">
+                                                            <rect key="frame" x="8" y="11" width="204" height="17"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qr-Im-myD">
+                                                            <rect key="frame" x="170" y="47" width="42" height="15"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="4qr-Im-myD" secondAttribute="height" multiplier="14:5" id="5l8-hx-ymy"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" red="0.028236396732182225" green="0.81526442307692304" blue="0.33068893731548232" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZR-1G-9CA">
+                                                            <rect key="frame" x="8" y="87" width="212" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="3Ad-Sb-kfn"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2v-Jr-CWb">
+                                                            <rect key="frame" x="8" y="128" width="212" height="17"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.96053949531784766" green="0.9605532889524897" blue="0.96139823717948714" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="trailing" secondItem="Swo-7R-ZOM" secondAttribute="trailingMargin" id="1dB-KP-WhZ"/>
+                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="top" secondItem="Swo-7R-ZOM" secondAttribute="top" constant="47" id="2tm-mb-3I2"/>
+                                                        <constraint firstItem="S7D-v5-T7I" firstAttribute="top" secondItem="Swo-7R-ZOM" secondAttribute="top" constant="11" id="8Om-35-MzE"/>
+                                                        <constraint firstItem="RZR-1G-9CA" firstAttribute="leading" secondItem="B2v-Jr-CWb" secondAttribute="leading" id="A72-uc-S0l"/>
+                                                        <constraint firstAttribute="trailing" secondItem="RZR-1G-9CA" secondAttribute="trailing" id="E2e-2S-52q"/>
+                                                        <constraint firstAttribute="bottom" secondItem="B2v-Jr-CWb" secondAttribute="bottom" constant="25" id="Ib8-Xq-04j"/>
+                                                        <constraint firstAttribute="bottom" secondItem="RZR-1G-9CA" secondAttribute="bottom" constant="62" id="S4n-YH-wEz"/>
+                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="centerY" secondItem="Swo-7R-ZOM" secondAttribute="centerY" id="Trh-Rv-sLT"/>
+                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="centerY" secondItem="CXf-VI-0Zc" secondAttribute="centerY" id="WBI-vN-uA1"/>
+                                                        <constraint firstItem="RZR-1G-9CA" firstAttribute="leading" secondItem="Swo-7R-ZOM" secondAttribute="leadingMargin" id="bJm-oA-YN9"/>
+                                                        <constraint firstItem="RZR-1G-9CA" firstAttribute="leading" secondItem="S7D-v5-T7I" secondAttribute="leading" id="cLE-N0-wbp"/>
+                                                        <constraint firstItem="RZR-1G-9CA" firstAttribute="trailing" secondItem="B2v-Jr-CWb" secondAttribute="trailing" id="ccs-Uh-ref"/>
+                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="leading" secondItem="CXf-VI-0Zc" secondAttribute="trailing" constant="54" id="g8n-6d-FbW"/>
+                                                        <constraint firstItem="RZR-1G-9CA" firstAttribute="leading" secondItem="CXf-VI-0Zc" secondAttribute="leading" id="iIt-Gs-DAZ"/>
+                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="top" secondItem="Swo-7R-ZOM" secondAttribute="top" constant="47" id="ka4-a6-6Dk"/>
+                                                        <constraint firstItem="B2v-Jr-CWb" firstAttribute="top" secondItem="RZR-1G-9CA" secondAttribute="bottom" constant="20" id="oBJ-2z-SPC"/>
+                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="trailing" secondItem="S7D-v5-T7I" secondAttribute="trailing" id="sgJ-Ek-mqE"/>
+                                                        <constraint firstItem="RZR-1G-9CA" firstAttribute="top" secondItem="CXf-VI-0Zc" secondAttribute="bottom" constant="22" id="vsD-ZF-GG4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="4qr-Im-myD" secondAttribute="bottom" constant="108" id="vwt-WB-b6B"/>
+                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="top" secondItem="S7D-v5-T7I" secondAttribute="bottom" constant="19" id="wUW-XM-mEy"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="2tm-mb-3I2"/>
+                                                            <exclude reference="Trh-Rv-sLT"/>
+                                                            <exclude reference="vwt-WB-b6B"/>
+                                                        </mask>
+                                                    </variation>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="buG-cO-oAD">
-                                                    <rect key="frame" x="51" y="72" width="84" height="54"/>
-                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="aiG-rT-sF7" firstAttribute="top" secondItem="yKV-ch-AmQ" secondAttribute="topMargin" constant="6" id="64G-xV-aPK"/>
+                                                <constraint firstItem="Swo-7R-ZOM" firstAttribute="height" secondItem="aiG-rT-sF7" secondAttribute="height" id="6Ba-zH-bOB"/>
+                                                <constraint firstItem="buG-cO-oAD" firstAttribute="centerY" secondItem="aiG-rT-sF7" secondAttribute="centerY" id="BGm-Lb-w3Y"/>
                                                 <constraint firstItem="aiG-rT-sF7" firstAttribute="leading" secondItem="yKV-ch-AmQ" secondAttribute="leadingMargin" id="Gko-PC-oY3"/>
+                                                <constraint firstItem="buG-cO-oAD" firstAttribute="centerX" secondItem="aiG-rT-sF7" secondAttribute="centerX" id="JQB-ok-tKA"/>
+                                                <constraint firstItem="buG-cO-oAD" firstAttribute="top" secondItem="yKV-ch-AmQ" secondAttribute="topMargin" constant="64" id="JZX-lH-vbb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Swo-7R-ZOM" secondAttribute="trailing" id="L6o-DS-Mtp"/>
+                                                <constraint firstItem="Swo-7R-ZOM" firstAttribute="top" secondItem="yKV-ch-AmQ" secondAttribute="topMargin" constant="6" id="M6b-Gp-4Hh"/>
+                                                <constraint firstItem="Swo-7R-ZOM" firstAttribute="centerY" secondItem="aiG-rT-sF7" secondAttribute="centerY" id="aAl-vE-x2a"/>
                                                 <constraint firstItem="aiG-rT-sF7" firstAttribute="centerY" secondItem="yKV-ch-AmQ" secondAttribute="centerY" id="sg5-Gz-2Jh"/>
+                                                <constraint firstItem="Swo-7R-ZOM" firstAttribute="leading" secondItem="aiG-rT-sF7" secondAttribute="leading" constant="178" id="skh-ht-fx0"/>
+                                                <constraint firstItem="Swo-7R-ZOM" firstAttribute="leading" secondItem="buG-cO-oAD" secondAttribute="trailing" constant="51" id="vyX-BH-mio"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
