@@ -104,6 +104,12 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
         
         let compFlatColor: UIColor = UIColor(complementaryFlatColorOf: FlatBlackDark())
         
+        cell.titleLabel.adjustsFontSizeToFitWidth = true
+        cell.roleLabel.adjustsFontSizeToFitWidth = true
+        cell.idLabel.adjustsFontSizeToFitWidth = true
+        cell.phoneLabel.adjustsFontSizeToFitWidth = true
+        cell.emailLabel.adjustsFontSizeToFitWidth = true
+        
         cell.titleLabel.textColor = compFlatColor
         cell.roleLabel.textColor = compFlatColor
         cell.phoneLabel.textColor = compFlatColor

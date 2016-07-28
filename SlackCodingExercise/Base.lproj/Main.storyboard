@@ -77,7 +77,7 @@
                                         <rect key="frame" x="0.0" y="95" width="414" height="198"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gJC-kK-s2v" id="yKV-ch-AmQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="198"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="197.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aiG-rT-sF7">
@@ -96,7 +96,7 @@
                                                     <rect key="frame" x="186" y="14" width="220" height="170"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="full_name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7D-v5-T7I">
-                                                            <rect key="frame" x="8" y="11" width="204" height="17"/>
+                                                            <rect key="frame" x="8" y="13" width="204" height="23"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -125,15 +125,15 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXf-VI-0Zc">
-                                                            <rect key="frame" x="8" y="87" width="108" height="17"/>
+                                                            <rect key="frame" x="8" y="87" width="154" height="17"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZi-8u-CnU">
-                                                            <rect key="frame" x="4" y="30" width="212" height="15"/>
+                                                            <rect key="frame" x="4" y="44" width="212" height="23"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="qZi-8u-CnU" secondAttribute="height" multiplier="212:21" constant="60.571428571428584" id="15P-yr-LbS"/>
+                                                                <constraint firstAttribute="width" secondItem="qZi-8u-CnU" secondAttribute="height" multiplier="212:21" constant="-20.190476190476176" id="15P-yr-LbS"/>
                                                                 <constraint firstAttribute="height" constant="21" id="snX-os-Vwl"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
@@ -150,12 +150,12 @@
                                                     <constraints>
                                                         <constraint firstItem="4qr-Im-myD" firstAttribute="trailing" secondItem="Swo-7R-ZOM" secondAttribute="trailingMargin" id="1dB-KP-WhZ"/>
                                                         <constraint firstItem="4qr-Im-myD" firstAttribute="top" secondItem="Swo-7R-ZOM" secondAttribute="top" constant="47" id="2tm-mb-3I2"/>
-                                                        <constraint firstItem="S7D-v5-T7I" firstAttribute="top" secondItem="Swo-7R-ZOM" secondAttribute="top" constant="11" id="8Om-35-MzE"/>
+                                                        <constraint firstItem="S7D-v5-T7I" firstAttribute="top" secondItem="Swo-7R-ZOM" secondAttribute="top" constant="13" id="8Om-35-MzE"/>
                                                         <constraint firstItem="RZR-1G-9CA" firstAttribute="leading" secondItem="B2v-Jr-CWb" secondAttribute="leading" id="A72-uc-S0l"/>
                                                         <constraint firstAttribute="trailing" secondItem="RZR-1G-9CA" secondAttribute="trailing" id="E2e-2S-52q"/>
                                                         <constraint firstItem="RZR-1G-9CA" firstAttribute="top" secondItem="4qr-Im-myD" secondAttribute="bottom" constant="12" id="HVe-Kj-rbn"/>
                                                         <constraint firstAttribute="bottom" secondItem="B2v-Jr-CWb" secondAttribute="bottom" constant="8" id="Ib8-Xq-04j"/>
-                                                        <constraint firstItem="qZi-8u-CnU" firstAttribute="height" secondItem="S7D-v5-T7I" secondAttribute="height" constant="-2" id="R7g-CF-IhN"/>
+                                                        <constraint firstItem="qZi-8u-CnU" firstAttribute="height" secondItem="S7D-v5-T7I" secondAttribute="height" id="R7g-CF-IhN"/>
                                                         <constraint firstAttribute="bottom" secondItem="RZR-1G-9CA" secondAttribute="bottom" constant="33" id="S4n-YH-wEz"/>
                                                         <constraint firstItem="4qr-Im-myD" firstAttribute="centerY" secondItem="Swo-7R-ZOM" secondAttribute="centerY" id="Trh-Rv-sLT"/>
                                                         <constraint firstItem="CXf-VI-0Zc" firstAttribute="leading" secondItem="RZR-1G-9CA" secondAttribute="leading" id="YUg-8s-AAw"/>
@@ -166,9 +166,9 @@
                                                         <constraint firstItem="RZR-1G-9CA" firstAttribute="trailing" secondItem="B2v-Jr-CWb" secondAttribute="trailing" id="ccs-Uh-ref"/>
                                                         <constraint firstItem="4qr-Im-myD" firstAttribute="top" secondItem="Swo-7R-ZOM" secondAttribute="top" constant="89" id="ka4-a6-6Dk"/>
                                                         <constraint firstItem="CXf-VI-0Zc" firstAttribute="baseline" secondItem="4qr-Im-myD" secondAttribute="firstBaseline" id="knh-AD-EXq"/>
-                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="leading" secondItem="CXf-VI-0Zc" secondAttribute="trailing" constant="54" id="loP-Bc-Lnl"/>
+                                                        <constraint firstItem="4qr-Im-myD" firstAttribute="leading" secondItem="CXf-VI-0Zc" secondAttribute="trailing" constant="8" id="loP-Bc-Lnl"/>
                                                         <constraint firstItem="B2v-Jr-CWb" firstAttribute="top" secondItem="RZR-1G-9CA" secondAttribute="bottom" constant="8" id="oBJ-2z-SPC"/>
-                                                        <constraint firstItem="qZi-8u-CnU" firstAttribute="top" secondItem="S7D-v5-T7I" secondAttribute="bottom" constant="2" id="rbd-Nb-G4P"/>
+                                                        <constraint firstItem="qZi-8u-CnU" firstAttribute="top" secondItem="S7D-v5-T7I" secondAttribute="bottom" constant="8" id="rbd-Nb-G4P"/>
                                                         <constraint firstItem="4qr-Im-myD" firstAttribute="trailing" secondItem="S7D-v5-T7I" secondAttribute="trailing" id="sgJ-Ek-mqE"/>
                                                         <constraint firstAttribute="bottom" secondItem="4qr-Im-myD" secondAttribute="bottom" constant="108" id="vwt-WB-b6B"/>
                                                         <constraint firstItem="4qr-Im-myD" firstAttribute="top" secondItem="S7D-v5-T7I" secondAttribute="bottom" constant="61" id="wUW-XM-mEy"/>
