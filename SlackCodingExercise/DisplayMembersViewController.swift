@@ -86,21 +86,37 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell")as! MemberTableViewCell
         
         let member = membersLocal[indexPath.row] as! Member
-        cell.titleLabel!.text = member.real_name
+        
+        cell.backgroundOfDetailsView.backgroundColor = UIColor(complementaryFlatColorOf: UIColor.whiteColor(), withAlpha: 0.25)
+        
+        cell.titleLabel!.text = member.real_name //This is REAL_NAME not TITLE
+        cell.phoneLabel.text = member.hasA?.phone
+        cell.emailLabel.text = member.hasA?.email
+        cell.idLabel.text = member.id
+        cell.roleLabel.text = member.hasA?.title // Misspelled Title Earlier, naming 'title' as ROLE
         
         let image = UIImage(data: (member.hasA?.image_192)!)
         cell.memberImage.image = image
         
         let color: UIColor = UIColor(hexString: member.color)
         cell.backgroundColor = color
-        cell.alpha = 0.8
-        cell.titleLabel.textColor = UIColor(complementaryFlatColorOf: color, withAlpha: 10)
-       // cell.titleLabel.superview!.backgroundColor?.colorWithAlphaComponent(0.25)
         
-        print(member.real_name)
+        
+        let compFlatColor: UIColor = UIColor(complementaryFlatColorOf: FlatBlackDark())
+        
+        cell.titleLabel.textColor = compFlatColor
+        cell.roleLabel.textColor = compFlatColor
+        cell.phoneLabel.textColor = compFlatColor
+        cell.emailLabel.textColor = compFlatColor
+        cell.idLabel.textColor = compFlatColor
+        
+        
         
         if(member.deleated!.boolValue){
             cell.deletedImageView.image = UIImage(named: "deleted")
+        }
+        if(member.is_admin!.boolValue){
+            cell.adminLabel.hidden = false
         }
         
         return cell

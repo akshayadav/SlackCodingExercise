@@ -15,6 +15,18 @@ class MemberTableViewCell: UITableViewCell {
     
     @IBOutlet weak var deletedImageView: UIImageView!
     
+    @IBOutlet weak var idLabel: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var adminLabel: UILabel!
+    
+    @IBOutlet weak var phoneLabel: UILabel!
+    
+    @IBOutlet weak var roleLabel: UILabel!
+    
+    @IBOutlet weak var backgroundOfDetailsView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
