@@ -19,6 +19,8 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var tableView: UITableView!
     var token:String = "xoxp-4698769766-4698769768-18910479235-8fa82d53b2"
     var membersLocal = [NSManagedObject]()
+    
+    var selectedMemberIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +55,7 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
                 
                 dispatch_async(dispatch_get_main_queue()){
                     
-                    if(response.result.value != nil){
+                    if((response.result.value != nil)&&(response.result.value!["members"] != nil)){
                 
                     let json = JSON(response.result.value!)
                     
@@ -86,8 +88,6 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
             
             
         })
-        
-        
         
     }
     
@@ -145,9 +145,23 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let member:Member = membersLocal[indexPath.row] as! Member
+       // let member:Member = membersLocal[indexPath.row] as! Member
+        
+        self.selectedMemberIndex = indexPath.row
+        
+        performSegueWithIdentifier("memberSelected", sender: self)
         
      
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if(segue.identifier == "memberSelected"){
+            let nextVC = segue.destinationViewController as! UINavigationController
+            let profileVC = nextVC.topViewController as! ProfileViewController
+            
+            profileVC.member = membersLocal[selectedMemberIndex]as? Member
+        }
     }
 
     

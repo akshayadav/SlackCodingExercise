@@ -148,11 +148,11 @@ class DataManager: NSObject {
         let existingMembers:[NSManagedObject] = fetchExistingMembers()
         
         for member in existingMembers{
-            let helloWorld:Member = member as! Member
+            let thisMember:Member = member as! Member
             
             //   let id = member.valueForKey("id")?.string
             
-            if (memberId == helloWorld.id ){
+            if (memberId == thisMember.id ){
                 return true
             }
         }
