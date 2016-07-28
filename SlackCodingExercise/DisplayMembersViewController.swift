@@ -64,7 +64,18 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
                     SVProgressHUD.dismiss()
                     }
                     else{
+                        let alert = UIAlertController(title: "Application Running Offline", message: "Please check internet connectivity.\nApplication will now run offline", preferredStyle: .Alert)
+                        let alertAction = UIAlertAction(title: "OK", style: .Default,handler: nil)
+                        
+                        
+                        alert.addAction(alertAction)
+                        
+                        self.presentViewController(alert,animated:true, completion:nil)
                         print("Something Is Wrong!")
+                        self.membersLocal = DataManager.fetchExistingMembers()
+                        self.tableView.reloadData()
+                        
+                        SVProgressHUD.dismiss()
                 }
                 }
                 
