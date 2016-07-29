@@ -276,6 +276,9 @@
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-ba-0Kq" userLabel="memberImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="120"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deleted" translatesAutoresizingMaskIntoConstraints="NO" id="K8I-2s-puW" userLabel="deletedImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>

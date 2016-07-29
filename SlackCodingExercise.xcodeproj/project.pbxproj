@@ -24,6 +24,7 @@
 		BA67321D1D495CCB005043D2 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67321C1D495CCB005043D2 /* MemberTableViewCell.swift */; };
 		BAE636091D4A0E650061CEA1 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE636081D4A0E650061CEA1 /* ProfileController.swift */; };
 		BAE6360B1D4A0FDF0061CEA1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE6360A1D4A0FDF0061CEA1 /* ProfileViewController.swift */; };
+		BAE6360D1D4AEFEE0061CEA1 /* UIImage+circleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE6360C1D4AEFEE0061CEA1 /* UIImage+circleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		BA67321C1D495CCB005043D2 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
 		BAE636081D4A0E650061CEA1 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		BAE6360A1D4A0FDF0061CEA1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BAE6360C1D4AEFEE0061CEA1 /* UIImage+circleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+circleImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			children = (
 				BAE636081D4A0E650061CEA1 /* ProfileController.swift */,
 				BAE6360A1D4A0FDF0061CEA1 /* ProfileViewController.swift */,
+				BAE6360C1D4AEFEE0061CEA1 /* UIImage+circleImage.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				BAE6360B1D4A0FDF0061CEA1 /* ProfileViewController.swift in Sources */,
 				BA6731CB1D49450F005043D2 /* AppDelegate.swift in Sources */,
 				BA6731D31D49450F005043D2 /* SlackCodingExercise.xcdatamodeld in Sources */,
+				BAE6360D1D4AEFEE0061CEA1 /* UIImage+circleImage.swift in Sources */,
 				BA6732151D494D3C005043D2 /* Profile+CoreDataProperties.swift in Sources */,
 				BA6732131D494D3C005043D2 /* Member+CoreDataProperties.swift in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 import UIKit
 import ChameleonFramework
+import QuartzCore
 
 
 class ProfileViewController: UIViewController {
@@ -30,10 +31,19 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         memberImageView.image = UIImage(data: NSData(data: (member?.hasA?.image_192)!))
-
+        
+        memberImageView.image = memberImageView.image?.circleMasking
+        middleGround.backgroundColor = UIColor(hexString: member?.color)
+        topView.backgroundColor = UIColor(hexString: member?.color)
+        bottomView.backgroundColor = UIColor(hexString: member?.color)
+        imageAndNameView.backgroundColor = UIColor(hexString: member?.color)
+        
+        
+        
     }
     
-
+  
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
