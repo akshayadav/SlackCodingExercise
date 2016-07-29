@@ -13,25 +13,43 @@ import ChameleonFramework
 class ProfileViewController: UIViewController {
 
     @IBOutlet var Background: UIView!
-    
-    @IBOutlet weak var mainImageView: UIImageView!
-    
-    @IBOutlet weak var translucentBackground: UIView!
-    
-    @IBOutlet weak var usernameLabel: UILabel!
-   
-    @IBOutlet weak var titleLabel: UILabel!
-    
-    @IBOutlet weak var deletedImageView: UIImageView!
-    
-    @IBOutlet weak var stackView: UIStackView!
+//    
+//    @IBOutlet weak var mainImageView: UIImageView!
+//    
+//    @IBOutlet weak var translucentBackground: UIView!
+//    
+//    @IBOutlet weak var usernameLabel: UILabel!
+//   
+//    @IBOutlet weak var titleLabel: UILabel!
+//    
+//    @IBOutlet weak var deletedImageView: UIImageView!
+//    
+//    @IBOutlet weak var stackView: UIStackView!
     
     var member:Member?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        
+//        print(mainImageView.frame.height)
+//        print(mainImageView.frame.width)
+//        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+//        
+//        mainImageView.layer.cornerRadius = self.mainImageView.frame.height/2
+//        
+//        mainImageView.clipsToBounds = true
+//        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,24 +58,28 @@ class ProfileViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        
-        Background.backgroundColor = UIColor(hexString: member?.color)
-        mainImageView.image = UIImage(data: (member?.hasA?.image_192)!)
-        translucentBackground.backgroundColor = UIColor(complementaryFlatColorOf: UIColor.whiteColor() ,withAlpha: 0.25)
-        let compFlatColor: UIColor = UIColor(complementaryFlatColorOf: FlatBlackDark())
-        
-        usernameLabel.text = member?.name
-        usernameLabel.textColor = compFlatColor
-        titleLabel.text = member?.hasA?.title
-        titleLabel.textColor = compFlatColor
-        
-        if(member!.deleated!.boolValue){
-            deletedImageView.hidden = false
-        }
-        
-        
-        
-        
+//        
+//        
+//        
+//        Background.backgroundColor = UIColor(hexString: member?.color)
+//        mainImageView.image = UIImage(data: (member?.hasA?.image_192)!)
+//       
+//      
+//        let compFlatColor: UIColor = UIColor(complementaryFlatColorOf: FlatWhiteDark())
+//        
+//        
+//        usernameLabel.text = member?.name
+//        usernameLabel.textColor = compFlatColor
+//        titleLabel.text = member?.hasA?.title
+//        titleLabel.textColor = compFlatColor
+//        
+//        if(member!.deleated!.boolValue){
+//            deletedImageView.hidden = false
+//        }
+//        
+//        
+//        
+//        
         
         
        

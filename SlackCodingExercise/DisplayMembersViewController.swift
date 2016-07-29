@@ -105,7 +105,7 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
         cell.backgroundOfDetailsView.backgroundColor = UIColor(complementaryFlatColorOf: UIColor.whiteColor(), withAlpha: 0.25)
         
         cell.titleLabel!.text = member.real_name //This is REAL_NAME not TITLE
-        cell.phoneLabel.text = member.hasA?.phone
+        cell.phoneLabel.text = member.hasA?.phone // ☏ 
         cell.emailLabel.text = member.hasA?.email
         cell.idLabel.text = member.id
         cell.roleLabel.text = member.hasA?.title // Misspelled Title Earlier, naming 'title' as ROLE
