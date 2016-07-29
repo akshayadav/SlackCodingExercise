@@ -23,7 +23,19 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var deletedImageView: UIImageView!
     
+    @IBOutlet weak var bioView: UIView!
+    
+    
     @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var realName: UILabel!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var phoneNumber: UILabel!
+    
+    @IBOutlet weak var email: UILabel!
+    
     
     
     var member:Member?
@@ -40,11 +52,50 @@ class ProfileViewController: UIViewController {
         imageAndNameView.backgroundColor = UIColor(hexString: member?.color)
         
         nameLabel.text = member?.name
+        
         nameLabel.adjustsFontSizeToFitWidth = true
-        nameLabel.backgroundColor = UIColor(complementaryFlatColorOf: UIColor.whiteColor(),withAlpha: 0.25)
+        realName.adjustsFontSizeToFitWidth = true
+        titleLabel.adjustsFontSizeToFitWidth = true
+        email.adjustsFontSizeToFitWidth = true
+        phoneNumber.adjustsFontSizeToFitWidth = true
+        
+        
+        
+        
+        nameLabel.backgroundColor = UIColor(hexString: member?.color,withAlpha: 0.25)
         
         nameLabel.layer.cornerRadius = 5.0
         
+        bioView.backgroundColor = UIColor(complementaryFlatColorOf: UIColor.whiteColor(),withAlpha: 0.25)
+        
+        if (member?.deleated?.boolValue) != nil {
+            deletedImageView.hidden = !(member?.deleated?.boolValue)!
+        }
+        
+        if (member?.real_name) != nil{
+            realName.text = "Real Name: "+(member?.real_name)!
+        }
+        else{
+            realName.text = "Real Name Unavailable"
+        }
+        
+        if(member?.hasA?.title) != nil{
+            titleLabel.text = "Title: "+(member?.hasA?.title)!
+        }else{
+            titleLabel.text = "Title Unavailable"
+        }
+        if(member?.hasA?.phone) != nil{
+            phoneNumber.text = "☏ "+(member?.hasA?.phone)!
+        }
+        else{
+            phoneNumber.text = "Phone Number Unavilable"
+        }
+        if(member?.hasA?.email) != nil{
+            email.text = "Email ID: "+(member?.hasA?.email)!
+        }
+        else{
+            email.text = "Email Unavailable"
+        }
         
     }
     
