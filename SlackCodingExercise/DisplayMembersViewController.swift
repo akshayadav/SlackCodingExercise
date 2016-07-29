@@ -101,17 +101,58 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
         
         cell.backgroundOfDetailsView.backgroundColor = UIColor(complementaryFlatColorOf: UIColor.whiteColor(), withAlpha: 0.25)
         
-        cell.titleLabel!.text = member.real_name //This is REAL_NAME not TITLE
-        cell.phoneLabel.text = member.hasA?.phone // ☏ 
-        cell.emailLabel.text = member.hasA?.email
-        cell.idLabel.text = member.id
-        cell.roleLabel.text = member.hasA?.title // Misspelled Title Earlier, naming 'title' as ROLE
         
-        let image = UIImage(data: (member.hasA?.image_192)!)
-        cell.memberImage.image = image
         
-        let color: UIColor = UIColor(hexString: member.color)
-        cell.backgroundColor = color
+        if (member.real_name != nil){
+            cell.titleLabel!.text = member.real_name
+        }
+        else{
+            cell.titleLabel!.text = "Real Name Unavailable"
+        }
+         //This is REAL_NAME not TITLE
+        
+        if(member.hasA?.phone != nil){
+            cell.phoneLabel.text = "☏ "+(member.hasA?.phone)! // ☏
+        }
+        else{
+            cell.phoneLabel.text = "Phone Number Unavailable"
+        }
+        
+        if(member.hasA?.email != nil){
+            cell.emailLabel.text = member.hasA?.email
+        }
+        else{
+            cell.emailLabel.text = "Email Unavailable"
+        }
+        
+        
+        cell.idLabel.text = "Id: " + (member.id)!
+        
+        if(member.hasA?.title != nil){
+            cell.roleLabel.text = member.hasA?.title // Misspelled Title Earlier, naming 'title' as ROLE
+        }
+        else{
+            cell.roleLabel.text = "Title Unavailable"
+        }
+        
+        if(member.hasA?.image_192 != nil){
+            let image = UIImage(data: (member.hasA?.image_192)!)
+            cell.memberImage.image = image
+        }
+        else{
+            
+            cell.memberImage.image = UIImage(named: "imageNA")
+            
+        }
+        
+        if(member.color != nil){
+            let color: UIColor = UIColor(hexString: member.color)
+            cell.backgroundColor = color
+        }
+        else{
+            cell.backgroundColor = UIColor.clearColor()
+        }
+        
         
         
         let compFlatColor: UIColor = UIColor(complementaryFlatColorOf: FlatBlackDark())
@@ -128,13 +169,12 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
         cell.emailLabel.textColor = compFlatColor
         cell.idLabel.textColor = compFlatColor
         
-        
-        
-        if(member.deleated!.boolValue){
-            cell.deletedImageView.image = UIImage(named: "deleted")
+        if(member.deleated?.boolValue != nil){
+            cell.deletedImageView.hidden = !(member.deleated?.boolValue)!
         }
-        if(member.is_admin!.boolValue){
-            cell.adminLabel.hidden = false
+        
+        if(member.is_admin?.boolValue != nil){
+            cell.adminLabel.hidden = (member.is_admin?.boolValue)!
         }
         
         return cell
@@ -154,13 +194,9 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if(segue.identifier == "memberSelected"){
-//            let nextVC = segue.destinationViewController as! UINavigationController
-//            let profileVC = nextVC.topViewController as! ProfileViewController
-//       
+       
             let profileVC = segue.destinationViewController as! ProfileViewController
             profileVC.member = membersLocal[selectedMemberIndex]as? Member
-            
-            
             
         }
     }

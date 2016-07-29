@@ -27,8 +27,6 @@ class DataManager: NSObject {
         
         for memberIndex in 0..<members.count{
             
-            
-            
             let member = Member(entity: memberEntity!, insertIntoManagedObjectContext: managedContext)
             //print(members[memberIndex])
             
@@ -64,24 +62,41 @@ class DataManager: NSObject {
                 profile.phone = members[memberIndex]["profile"]["phone"].string
                 
                 profile.image_24_URL = members[memberIndex]["profile"]["image_24"].string
-                let imageData_24 = NSData(contentsOfURL: NSURL(string: profile.image_24_URL!)!)
-                profile.image_24 = imageData_24
+                
+                if(profile.image_24_URL != nil){
+                    let imageData_24 = NSData(contentsOfURL: NSURL(string: profile.image_24_URL!)!)
+                    profile.image_24 = imageData_24
+                }
                 
                 profile.image_32_URL = members[memberIndex]["profile"]["image_32"].string
-                let imageData_32 = NSData(contentsOfURL: NSURL(string: profile.image_32_URL!)!)
-                profile.image_32 = imageData_32
+                
+                if(profile.image_32_URL != nil){
+                    let imageData_32 = NSData(contentsOfURL: NSURL(string: profile.image_32_URL!)!)
+                    profile.image_32 = imageData_32
+                }
                 
                 profile.image_48_URL = members[memberIndex]["profile"]["image_48"].string
-                let imageData_48 = NSData(contentsOfURL: NSURL(string: profile.image_48_URL!)!)
-                profile.image_48 = imageData_48
+                
+                if(profile.image_48_URL != nil){
+                    let imageData_48 = NSData(contentsOfURL: NSURL(string: profile.image_48_URL!)!)
+                    profile.image_48 = imageData_48
+                }
                 
                 profile.image_72_URL = members[memberIndex]["profile"]["image_72"].string
-                let imageData_72 = NSData(contentsOfURL: NSURL(string: profile.image_72_URL!)!)
-                profile.image_72 = imageData_72
+                
+                if(profile.image_72_URL != nil){
+                    let imageData_72 = NSData(contentsOfURL: NSURL(string: profile.image_72_URL!)!)
+                    profile.image_72 = imageData_72
+                }
                 
                 profile.image_192_URL = members[memberIndex]["profile"]["image_192"].string
-                let imageData_92 = NSData(contentsOfURL: NSURL(string: profile.image_192_URL!)!)
-                profile.image_192 = imageData_92
+                
+                if(profile.image_192_URL != nil){
+                    let imageData_192 = NSData(contentsOfURL: NSURL(string: profile.image_192_URL!)!)
+                    profile.image_192 = imageData_192
+                }
+                
+                
                 
                 profile.image_original = members[memberIndex]["profile"]["image_original"].string
                 profile.avatar_hash = members[memberIndex]["profile"]["avatar_hash"].string
@@ -157,15 +172,6 @@ class DataManager: NSObject {
             }
         }
         return false
-        
-    }
-
-    func getImageData(urlString:String)->NSData{
-    
-        let url:NSURL = NSURL(fileURLWithPath: urlString)
-        let imageData:NSData = NSData(contentsOfURL: url)!
-        
-        return imageData
         
     }
     

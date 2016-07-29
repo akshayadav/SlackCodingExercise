@@ -89,7 +89,7 @@
                                                         <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="100"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="buG-cO-oAD">
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deleted" translatesAutoresizingMaskIntoConstraints="NO" id="buG-cO-oAD">
                                                     <rect key="frame" x="51" y="72" width="84" height="54"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-7R-ZOM">
