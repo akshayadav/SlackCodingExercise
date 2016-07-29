@@ -274,17 +274,33 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zok-TS-Lxk" userLabel="ImageAndNameContainer">
                                                 <rect key="frame" x="87" y="8" width="240" height="288"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-ba-0Kq">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-ba-0Kq" userLabel="memberImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
                                                     </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deleted" translatesAutoresizingMaskIntoConstraints="NO" id="K8I-2s-puW" userLabel="deletedImageView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSj-re-jh8" userLabel="nameLabel">
+                                                        <rect key="frame" x="0.0" y="248" width="240" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstItem="K8I-2s-puW" firstAttribute="centerX" secondItem="vjx-ba-0Kq" secondAttribute="centerX" id="2NL-f6-1yS"/>
                                                     <constraint firstItem="vjx-ba-0Kq" firstAttribute="height" secondItem="Zok-TS-Lxk" secondAttribute="width" id="7pi-h8-CUn"/>
                                                     <constraint firstAttribute="width" secondItem="Zok-TS-Lxk" secondAttribute="height" multiplier="5:6" id="ASy-U4-Yxr"/>
+                                                    <constraint firstItem="TSj-re-jh8" firstAttribute="top" secondItem="K8I-2s-puW" secondAttribute="bottom" constant="8" id="BDA-hu-Tgu"/>
                                                     <constraint firstItem="vjx-ba-0Kq" firstAttribute="width" secondItem="Zok-TS-Lxk" secondAttribute="width" id="CGw-dM-qrN"/>
+                                                    <constraint firstItem="TSj-re-jh8" firstAttribute="width" secondItem="Zok-TS-Lxk" secondAttribute="width" id="Dob-8f-kzF"/>
+                                                    <constraint firstItem="K8I-2s-puW" firstAttribute="width" secondItem="vjx-ba-0Kq" secondAttribute="width" id="IHW-Sw-Qwz"/>
+                                                    <constraint firstItem="K8I-2s-puW" firstAttribute="height" secondItem="vjx-ba-0Kq" secondAttribute="height" id="IoY-BU-e2X"/>
                                                     <constraint firstItem="vjx-ba-0Kq" firstAttribute="top" secondItem="Zok-TS-Lxk" secondAttribute="top" id="N4N-5Q-b5c"/>
+                                                    <constraint firstItem="K8I-2s-puW" firstAttribute="centerY" secondItem="vjx-ba-0Kq" secondAttribute="centerY" id="dSl-Co-dUp"/>
                                                     <constraint firstItem="vjx-ba-0Kq" firstAttribute="centerX" secondItem="Zok-TS-Lxk" secondAttribute="centerX" id="tqk-yU-Pr6"/>
+                                                    <constraint firstItem="TSj-re-jh8" firstAttribute="centerX" secondItem="Zok-TS-Lxk" secondAttribute="centerX" id="xvE-gc-maT"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -349,6 +365,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="deleted" width="175" height="83"/>
         <image name="logo" width="256" height="256"/>
     </resources>
 </document>
