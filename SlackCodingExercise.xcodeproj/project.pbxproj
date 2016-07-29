@@ -22,7 +22,6 @@
 		BA6732161D494D3C005043D2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6732121D494D3C005043D2 /* Profile.swift */; };
 		BA67321B1D4950D8005043D2 /* DisplayMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67321A1D4950D8005043D2 /* DisplayMembersViewController.swift */; };
 		BA67321D1D495CCB005043D2 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67321C1D495CCB005043D2 /* MemberTableViewCell.swift */; };
-		BAE636091D4A0E650061CEA1 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE636081D4A0E650061CEA1 /* ProfileController.swift */; };
 		BAE6360B1D4A0FDF0061CEA1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE6360A1D4A0FDF0061CEA1 /* ProfileViewController.swift */; };
 		BAE6360D1D4AEFEE0061CEA1 /* UIImage+circleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE6360C1D4AEFEE0061CEA1 /* UIImage+circleImage.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		BA6732121D494D3C005043D2 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Model/Profile.swift; sourceTree = "<group>"; };
 		BA67321A1D4950D8005043D2 /* DisplayMembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayMembersViewController.swift; sourceTree = "<group>"; };
 		BA67321C1D495CCB005043D2 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
-		BAE636081D4A0E650061CEA1 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		BAE6360A1D4A0FDF0061CEA1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BAE6360C1D4AEFEE0061CEA1 /* UIImage+circleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+circleImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,7 +226,6 @@
 		BAE636071D4A0E330061CEA1 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				BAE636081D4A0E650061CEA1 /* ProfileController.swift */,
 				BAE6360A1D4A0FDF0061CEA1 /* ProfileViewController.swift */,
 				BAE6360C1D4AEFEE0061CEA1 /* UIImage+circleImage.swift */,
 			);
@@ -423,7 +420,6 @@
 				BA6732141D494D3C005043D2 /* Member.swift in Sources */,
 				BA67320E1D494C49005043D2 /* DataManager.swift in Sources */,
 				BA67321D1D495CCB005043D2 /* MemberTableViewCell.swift in Sources */,
-				BAE636091D4A0E650061CEA1 /* ProfileController.swift in Sources */,
 				BAE6360B1D4A0FDF0061CEA1 /* ProfileViewController.swift in Sources */,
 				BA6731CB1D49450F005043D2 /* AppDelegate.swift in Sources */,
 				BA6731D31D49450F005043D2 /* SlackCodingExercise.xcdatamodeld in Sources */,
