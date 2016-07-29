@@ -270,7 +270,30 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOD-20-XG0" userLabel="TopView">
                                         <rect key="frame" x="0.0" y="64" width="414" height="304"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zok-TS-Lxk" userLabel="ImageAndNameContainer">
+                                                <rect key="frame" x="87" y="8" width="240" height="288"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-ba-0Kq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="vjx-ba-0Kq" firstAttribute="height" secondItem="Zok-TS-Lxk" secondAttribute="width" id="7pi-h8-CUn"/>
+                                                    <constraint firstAttribute="width" secondItem="Zok-TS-Lxk" secondAttribute="height" multiplier="5:6" id="ASy-U4-Yxr"/>
+                                                    <constraint firstItem="vjx-ba-0Kq" firstAttribute="width" secondItem="Zok-TS-Lxk" secondAttribute="width" id="CGw-dM-qrN"/>
+                                                    <constraint firstItem="vjx-ba-0Kq" firstAttribute="top" secondItem="Zok-TS-Lxk" secondAttribute="top" id="N4N-5Q-b5c"/>
+                                                    <constraint firstItem="vjx-ba-0Kq" firstAttribute="centerX" secondItem="Zok-TS-Lxk" secondAttribute="centerX" id="tqk-yU-Pr6"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.91085166390000005" green="0.67776964709999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Zok-TS-Lxk" firstAttribute="top" secondItem="mOD-20-XG0" secondAttribute="top" constant="8" id="26a-09-wAS"/>
+                                            <constraint firstAttribute="bottom" secondItem="Zok-TS-Lxk" secondAttribute="bottom" constant="8" id="tig-HY-PRg"/>
+                                            <constraint firstItem="Zok-TS-Lxk" firstAttribute="centerX" secondItem="mOD-20-XG0" secondAttribute="centerX" id="uKC-4W-kJR"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.6966854078630238" green="0.95650058770410107" blue="1" alpha="1" colorSpace="calibratedRGB"/>
