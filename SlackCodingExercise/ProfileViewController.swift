@@ -25,6 +25,7 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    
     var member:Member?
     
     override func viewDidLoad() {
@@ -38,6 +39,11 @@ class ProfileViewController: UIViewController {
         bottomView.backgroundColor = UIColor(hexString: member?.color)
         imageAndNameView.backgroundColor = UIColor(hexString: member?.color)
         
+        nameLabel.text = member?.name
+        nameLabel.adjustsFontSizeToFitWidth = true
+        nameLabel.backgroundColor = UIColor(complementaryFlatColorOf: UIColor.whiteColor(),withAlpha: 0.25)
+        
+        nameLabel.layer.cornerRadius = 5.0
         
         
     }

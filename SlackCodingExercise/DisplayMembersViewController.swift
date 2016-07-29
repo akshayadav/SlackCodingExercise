@@ -84,9 +84,6 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
                 
             }
             
-            
-            
-            
         })
         
     }
@@ -157,10 +154,14 @@ class DisplayMembersViewController: UIViewController, UITableViewDataSource, UIT
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if(segue.identifier == "memberSelected"){
-            let nextVC = segue.destinationViewController as! UINavigationController
-            let profileVC = nextVC.topViewController as! ProfileViewController
-            
+//            let nextVC = segue.destinationViewController as! UINavigationController
+//            let profileVC = nextVC.topViewController as! ProfileViewController
+//       
+            let profileVC = segue.destinationViewController as! ProfileViewController
             profileVC.member = membersLocal[selectedMemberIndex]as? Member
+            
+            
+            
         }
     }
 
