@@ -24,6 +24,7 @@ extension UIImage {
         imageView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
         let result = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+        
         return result
     }
 }
