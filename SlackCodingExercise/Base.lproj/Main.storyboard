@@ -280,9 +280,12 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deleted" translatesAutoresizingMaskIntoConstraints="NO" id="K8I-2s-puW" userLabel="deletedImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSj-re-jh8" userLabel="nameLabel">
-                                                        <rect key="frame" x="0.0" y="248" width="240" height="25.5"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISu-Nc-ckq">
+                                                        <rect key="frame" x="0.0" y="240" width="240" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ISu-Nc-ckq" secondAttribute="height" multiplier="5:1" id="kEW-xs-BnR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -292,15 +295,15 @@
                                                     <constraint firstItem="K8I-2s-puW" firstAttribute="centerX" secondItem="vjx-ba-0Kq" secondAttribute="centerX" id="2NL-f6-1yS"/>
                                                     <constraint firstItem="vjx-ba-0Kq" firstAttribute="height" secondItem="Zok-TS-Lxk" secondAttribute="width" id="7pi-h8-CUn"/>
                                                     <constraint firstAttribute="width" secondItem="Zok-TS-Lxk" secondAttribute="height" multiplier="5:6" id="ASy-U4-Yxr"/>
-                                                    <constraint firstItem="TSj-re-jh8" firstAttribute="top" secondItem="K8I-2s-puW" secondAttribute="bottom" constant="8" id="BDA-hu-Tgu"/>
                                                     <constraint firstItem="vjx-ba-0Kq" firstAttribute="width" secondItem="Zok-TS-Lxk" secondAttribute="width" id="CGw-dM-qrN"/>
-                                                    <constraint firstItem="TSj-re-jh8" firstAttribute="width" secondItem="Zok-TS-Lxk" secondAttribute="width" id="Dob-8f-kzF"/>
                                                     <constraint firstItem="K8I-2s-puW" firstAttribute="width" secondItem="vjx-ba-0Kq" secondAttribute="width" id="IHW-Sw-Qwz"/>
                                                     <constraint firstItem="K8I-2s-puW" firstAttribute="height" secondItem="vjx-ba-0Kq" secondAttribute="height" id="IoY-BU-e2X"/>
+                                                    <constraint firstItem="ISu-Nc-ckq" firstAttribute="centerX" secondItem="Zok-TS-Lxk" secondAttribute="centerX" id="Mxa-C5-ZoG"/>
                                                     <constraint firstItem="vjx-ba-0Kq" firstAttribute="top" secondItem="Zok-TS-Lxk" secondAttribute="top" id="N4N-5Q-b5c"/>
                                                     <constraint firstItem="K8I-2s-puW" firstAttribute="centerY" secondItem="vjx-ba-0Kq" secondAttribute="centerY" id="dSl-Co-dUp"/>
                                                     <constraint firstItem="vjx-ba-0Kq" firstAttribute="centerX" secondItem="Zok-TS-Lxk" secondAttribute="centerX" id="tqk-yU-Pr6"/>
-                                                    <constraint firstItem="TSj-re-jh8" firstAttribute="centerX" secondItem="Zok-TS-Lxk" secondAttribute="centerX" id="xvE-gc-maT"/>
+                                                    <constraint firstItem="ISu-Nc-ckq" firstAttribute="top" secondItem="K8I-2s-puW" secondAttribute="bottom" id="zOM-w6-M4L"/>
+                                                    <constraint firstItem="ISu-Nc-ckq" firstAttribute="width" secondItem="Zok-TS-Lxk" secondAttribute="width" id="zb4-Lw-Fyf"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -339,6 +342,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="Background" destination="Lna-sJ-4Wi" id="WHp-kC-onn"/>
+                        <outlet property="bottomView" destination="3Pv-el-763" id="ENr-T1-TOS"/>
+                        <outlet property="deletedImageView" destination="K8I-2s-puW" id="GG2-Wz-uFM"/>
+                        <outlet property="imageAndNameView" destination="Zok-TS-Lxk" id="zwe-ds-yCY"/>
+                        <outlet property="memberImageView" destination="vjx-ba-0Kq" id="w4X-zw-62J"/>
+                        <outlet property="middleGround" destination="mFk-0G-GAP" id="kl8-vX-xHB"/>
+                        <outlet property="topView" destination="mOD-20-XG0" id="gVB-Iu-dK9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AU8-g7-zNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
